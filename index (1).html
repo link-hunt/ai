@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChatGPT, Veo, Nano Banana — без VPN | Link-Hunt</title>
+<meta name="description" content="Все мои видео сделаны здесь. Два сервиса с топовыми нейросетями, которые работают в России без VPN: SYNTX и GPTML.">
+<meta name="theme-color" content="#14163a">
+<meta property="og:title" content="ChatGPT, Veo, Nano Banana — без VPN">
+<meta property="og:description" content="Все мои видео сделаны здесь. Выбирай подходящий вариант и создавай.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#14163a;--bg2:#1f1b4d;--ink:#f4f1ff;--muted:#b9b4e0;
+  --card:#f4f1ff;--card-ink:#171533;--card-muted:#4d4a78;--chip:#e4dfff;
+  --syntx:#4c5cff;--gptml:#ff6a1f;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;color-scheme:dark}
+body{
+  margin:0;min-height:100%;
+  font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg) radial-gradient(120% 60% at 50% 0%,var(--bg2),var(--bg) 70%) no-repeat;
+  display:flex;justify-content:center;
+}
+main{width:100%;max-width:460px;padding:44px 18px 28px;display:flex;flex-direction:column;min-height:100vh}
+h1{margin:0 0 12px;font-size:clamp(1.7rem,7.5vw,2.2rem);line-height:1.12;letter-spacing:-.02em;font-weight:800;text-align:center;text-wrap:balance}
+.lead{margin:0 auto 28px;max-width:34ch;text-align:center;color:var(--muted);text-wrap:balance}
+.links{display:grid;gap:16px}
+.card{
+  --c:var(--syntx);
+  position:relative;display:block;padding:20px 20px 18px;
+  background:var(--card);color:var(--card-ink);text-decoration:none;
+  border-radius:20px;border-bottom:5px solid var(--c);
+  transition:transform .15s ease;
+}
+.card.gptml{--c:var(--gptml)}
+.card:hover{transform:translateY(-2px)}
+.card:active{transform:translateY(0)}
+.card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+/* рамка видоискателя */
+.card::before,.card::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--c);opacity:.7;pointer-events:none}
+.card::before{top:10px;left:10px;border-right:0;border-bottom:0}
+.card::after{bottom:14px;right:10px;border-left:0;border-top:0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.name{font-size:1.55rem;font-weight:800;letter-spacing:-.01em}
+.badge{
+  font-size:.78rem;font-weight:700;color:#fff;background:var(--c);
+  padding:4px 11px;border-radius:99px;white-space:nowrap
+}
+.hook{margin:0 0 2px;font-weight:700;line-height:1.35}
+.sub{margin:0 0 14px;color:var(--card-muted);font-size:.95rem}
+.models{margin:0;padding:0;list-style:none;display:grid;gap:7px}
+.models li{font-size:.84rem;line-height:1.35;color:var(--card-muted)}
+.models b{color:var(--card-ink);font-weight:700}
+.go{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin-top:16px;padding:12px;border-radius:12px;
+  background:var(--c);color:#fff;font-weight:700
+}
+.go svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+footer{margin-top:auto;padding-top:32px;text-align:center;font-size:.85rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+@media (min-width:600px){main{padding-top:72px}}
+</style>
+</head>
+<body>
+<main>
+  <h1>ChatGPT, Veo, Nano Banana — без VPN</h1>
+  <p class="lead">Все мои видео сделаны здесь. Выбирай подходящий вариант и создавай.</p>
+
+  <div class="links">
+    <a class="card" href="https://syntx.ai/welcome/4v69c2wv" target="_blank" rel="noopener">
+      <div class="top"><span class="name">SYNTX</span><span class="badge">Начни бесплатно</span></div>
+      <p class="hook">100+ нейросетей по одной подписке вместо десяти.</p>
+      <p class="sub">Текст, фото, видео и музыка в одном окне.</p>
+      <ul class="models">
+        <li>💬 <b>Текст:</b> ChatGPT, Claude, Gemini, Grok, DeepSeek</li>
+        <li>🖼 <b>Фото:</b> Nano Banana, GPT Image, Seedream, Flux</li>
+        <li>🎬 <b>Видео:</b> Kling, Veo, Seedance, Runway, Luma</li>
+        <li>🎵 <b>Звук:</b> Suno, ElevenLabs</li>
+      </ul>
+      <span class="go">Открыть SYNTX <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card gptml" href="https://gptml.ru/p/gptml-ai?ref=5521429" target="_blank" rel="noopener">
+      <div class="top"><span class="name">GPTML</span><span class="badge">Безлимит</span></div>
+      <p class="hook">Безлимит на видео, фото и 4K: без токенов и доплат.</p>
+      <p class="sub">Все модели в одном окне, с телефона и компьютера.</p>
+      <ul class="models">
+        <li>🎬 <b>Видео:</b> Veo 3.1, Runway Gen-4, Runway Act-Two</li>
+        <li>🖼 <b>Фото:</b> Nano Banana Pro, GPT Image 2.5, Flux 2 Pro, Seedream 5 Pro</li>
+        <li>✨ <b>4K-апскейл:</b> Topaz, Recraft Clarity</li>
+        <li>🎙 <b>Голос и текст:</b> Google TTS, Whisper</li>
+      </ul>
+      <span class="go">Открыть GPTML <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+
+  <footer>&copy; <span id="y">2026</span> Link-Hunt</footer>
+</main>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
