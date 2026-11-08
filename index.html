@@ -1,0 +1,153 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои ссылки</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #2563eb; /* синий акцент */
+            --border: #e5e7eb;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+
+        .links-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        /* На мобильных — одна кнопка в строке */
+        @media (min-width: 480px) {
+            .links-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .links-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 18px 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: opacity 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+        }
+
+        .btn:hover { opacity: 0.9; }
+        .btn.btn-blue { background-color: var(--accent); }
+        .btn.btn-gray { background-color: #f3f4f6; color: #374151; }
+
+        .newsletter {
+            margin-top: 36px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newsletter h2 { font-size: 18px; margin-bottom: 14px; }
+
+        form { display: flex; flex-direction: column; gap: 10px; }
+
+        input[type="email"] {
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button[type="submit"] {
+            padding: 12px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover { opacity: 0.9; }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Привет! Мои ссылки</h1>
+
+        <div class="links-grid">
+            <!-- Кнопка 1 -->
+            <a href="https://t.me/твой_канал" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <!-- Кнопка 2 -->
+            <a href="https://instagram.com/твой_аккаунт" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <!-- Кнопка 3 -->
+            <a href="https://youtube.com/@твой_канал" class="btn btn-blue" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <!-- Кнопка 4 -->
+            <a href="https://сайт.ru" class="btn btn-gray" target="_blank" rel="noopener noreferrer">Сайт</a>
+        </div>
+
+        <!-- Форма подписки на Mailchimp -->
+        <div class="newsletter">
+            <h2>Хочешь получать обновления?</h2>
+            <form action="https://YOUR-MAILCHIMP-URL.com/subscribe/post?u=ВАШ-ID&id=ВАШ-FORM-ID" method="post" target="_blank">
+                <input type="email" name="EMAIL" placeholder="Твой email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+            <p style="margin-top:10px; font-size:12px;">Без спама, можно отписаться в любой момент.</p>
+        </div>
+
+        <footer>&copy; 2024 Твой Бренд</footer>
+    </div>
+
+    <!-- Яндекс Метрика (вставь номер счётчика) -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.createElement(t),k.src=r,a.src=t+":/
+        /mc.yandex.ru/metrika/tag.js";
+        (e.head||e.documentElement).appendChild(k),(e.head||e.documentElement).appendChild(a)})(window, document, "script", "https://mc.yandex.ru/metrika/watch.js", "ym");
+
+        ym(ВАШ_НОМЕР_СЧЁТЧИКА, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+</body>
+</html>
